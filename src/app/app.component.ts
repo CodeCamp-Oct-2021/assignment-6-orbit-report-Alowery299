@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Satellite } from './satellite';
 
 @Component({
@@ -9,8 +9,8 @@ import { Satellite } from './satellite';
 export class AppComponent {
   title = 'orbit-report';
 
-  sourceList: Satellite[];
-  displayList: Satellite[];
+           sourceList: Satellite[];
+  			displayList: Satellite[];
 
 	constructor() {
 		this.sourceList = [];
@@ -48,7 +48,7 @@ export class AppComponent {
 		}
 		// assign this.displayList to be the array of matching satellites
 		// this will cause Angular to re-make the table, but now only containing matches
-		this.displayList = matchingSatellites;
+		this.displayList = matchingSatellites
 	}
 
 
