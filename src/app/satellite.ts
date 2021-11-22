@@ -1,3 +1,5 @@
+import { Type } from "@angular/core";
+
 export class Satellite {
 
 	name: string;
@@ -15,9 +17,13 @@ export class Satellite {
    }
 	
 	isSpaceDebris(): boolean {
+	  if(this.type === "Space Debris"){
 		return true;
+	  }	
+	
+	 } 
    }
 
-}
 
+// let satelliteDebris = isSpaceDebris():
 // TODO 3a: fix isSpaceDebris check
